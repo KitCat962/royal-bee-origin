@@ -1,0 +1,301 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"bar": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 16,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:wet_bar",
+				"comparison": "==",
+				"compare_to": 0
+			}
+		},
+		"min_action": {
+			"type": "origins:change_resource",
+			"resource": "*:wet_toggle",
+			"change": 0,
+			"set": true
+		},
+		"max_action": {
+			"type": "origins:change_resource",
+			"resource": "*:wet_toggle",
+			"change": 1,
+			"set": true
+		}
+	},
+	"toggle": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"splash_potion": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"comparison": "==",
+						"compare_to": 0
+					},
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:wet_bar",
+						"change": 100
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"calculation": "sum",
+						"comparison": ">=",
+						"compare_to": 4
+					},
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:wet_bar",
+						"change": 75
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"calculation": "sum",
+						"comparison": ">=",
+						"compare_to": 8
+					},
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:wet_bar",
+						"change": 50
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"calculation": "sum",
+						"comparison": ">=",
+						"compare_to": 16
+					},
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:wet_bar",
+						"change": 25
+					}
+				}
+			]
+		},
+		"interval": 4,
+		"condition": {
+			"type": "origins:command",
+			"command": "execute at @s as @e[type=minecraft:potion,limit=1,sort=nearest,distance=..3,nbt={Item: {tag: {Potion: \"minecraft:water\"}}}] run kill @s",
+			"comparison": ">=",
+			"compare_to": 1
+		}
+	},
+	"while_in_water": {
+		"type": "origins:action_over_time",
+		"interval": 10,
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"calculation": "sum",
+						"comparison": "==",
+						"compare_to": 0
+					},
+					"action": {
+						"type": "origins:if_else_list",
+						"actions": [
+							{
+								"condition": {
+									"type": "origins:fluid_height",
+									"fluid": "minecraft:water",
+									"comparison": "!=",
+									"compare_to": 0
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": 10
+								}
+							},
+							{
+								"condition": {
+									"type": "origins:in_rain"
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": 4
+								}
+							},
+							{
+								"condition": {
+									"type": "origins:constant",
+									"value": true
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": -2
+								}
+							}
+						]
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"calculation": "sum",
+						"comparison": ">=",
+						"compare_to": 4
+					},
+					"action": {
+						"type": "origins:if_else_list",
+						"actions": [
+							{
+								"condition": {
+									"type": "origins:fluid_height",
+									"fluid": "minecraft:water",
+									"comparison": "!=",
+									"compare_to": 0
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": 8
+								}
+							},
+							{
+								"condition": {
+									"type": "origins:in_rain"
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": 2
+								}
+							},
+							{
+								"condition": {
+									"type": "origins:constant",
+									"value": true
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": -2
+								}
+							}
+						]
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"calculation": "sum",
+						"comparison": ">=",
+						"compare_to": 8
+					},
+					"action": {
+						"type": "origins:if_else_list",
+						"actions": [
+							{
+								"condition": {
+									"type": "origins:fluid_height",
+									"fluid": "minecraft:water",
+									"comparison": "!=",
+									"compare_to": 0
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": 5
+								}
+							},
+							{
+								"condition": {
+									"type": "origins:in_rain"
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": 1
+								}
+							},
+							{
+								"condition": {
+									"type": "origins:constant",
+									"value": true
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": -2
+								}
+							}
+						]
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:enchantment",
+						"enchantment": "minecraft:water_protection",
+						"calculation": "sum",
+						"comparison": ">=",
+						"compare_to": 16
+					},
+					"action": {
+						"type": "origins:if_else_list",
+						"actions": [
+							{
+								"condition": {
+									"type": "origins:fluid_height",
+									"fluid": "minecraft:water",
+									"comparison": "!=",
+									"compare_to": 0
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": 2
+								}
+							},
+							{
+								"condition": {
+									"type": "origins:constant",
+									"value": true
+								},
+								"action": {
+									"type": "origins:change_resource",
+									"resource": "*:wet_bar",
+									"change": -2
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}
