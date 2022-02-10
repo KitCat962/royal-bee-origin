@@ -1,0 +1,54 @@
+{
+	"name":"Float Flight",
+	"description":"",
+	"type":"origins:multiple",
+	"no_grav":{
+		"type":"origins:modify_falling",
+		"velocity":0,
+		"take_fall_damage":false,
+		"condition":{
+			"type":"origins:resource",
+			"resource":"*:wet_toggle",
+			"comparison":"==",
+			"compare_to":0
+		}
+	},
+	"on_space":{
+		"type":"origins:active_self",
+		"cooldown":0,
+		"key":{
+			"key":"key.jump",
+			"continuous":true
+		},
+		"hud_render":{"should_render": false},
+		"entity_action":{
+			"type": "origins:add_velocity",
+			"y": 1
+		},
+		"condition":{
+			"type":"origins:resource",
+			"resource":"*:wet_toggle",
+			"comparison":"==",
+			"compare_to":0
+		}
+	},
+	"on_shift":{
+		"type":"origins:active_self",
+		"cooldown":0,
+		"key":{
+			"key":"key.sneak",
+			"continuous":true
+		},
+		"hud_render":{"should_render": false},
+		"entity_action":{
+			"type": "origins:add_velocity",
+			"y": -1
+		},
+		"condition":{
+			"type":"origins:resource",
+			"resource":"*:wet_toggle",
+			"comparison":"==",
+			"compare_to":0
+		}
+	}
+}
