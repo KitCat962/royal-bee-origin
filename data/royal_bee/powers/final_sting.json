@@ -1,0 +1,25 @@
+{
+	"name": "Final Sting",
+	"description": "",
+	"type": "origins:active_self",
+	"cooldown": 1200,
+	"hud_render": {
+		"should_render": true
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "kill @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "effect give @e[sort=nearest,limit=1,distance=0.1..2] minecraft:instant_damage 1 1"
+			}
+		]
+	}
+}
