@@ -1,0 +1,66 @@
+{
+	"name": "NOT THE BEES",
+	"description": "",
+	"type": "origins:multiple",
+	"onpress": {
+		"type": "origins:active_self",
+		"cooldown": 200,
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+			"bar_index": 0,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:summon_bee_self",
+				"comparison": "!=",
+				"compare_to": 0
+			}
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "tag @s add royal_bee.royal"
+				},
+				{
+					"type":"origins:spawn_entity",
+					"entity_type":"minecraft:bee",
+					"entity_action":{
+						"type": "origins:grant_power",
+						"power": "royal_bee:summon_bee_target",
+						"source": "royal_bee:summon_bee_player"
+					}
+				},
+				{
+					"type":"origins:spawn_entity",
+					"entity_type":"minecraft:bee",
+					"entity_action":{
+						"type": "origins:grant_power",
+						"power": "royal_bee:summon_bee_target",
+						"source": "royal_bee:summon_bee_player"
+					}
+				},
+				{
+					"type":"origins:spawn_entity",
+					"entity_type":"minecraft:bee",
+					"entity_action":{
+						"type": "origins:grant_power",
+						"power": "royal_bee:summon_bee_target",
+						"source": "royal_bee:summon_bee_player"
+					}
+				}
+			]
+		}
+	},
+	"removetag": {
+		"type": "origins:action_on_callback",
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "tag @s remove royal_bee.royal"
+		}
+	}
+}
