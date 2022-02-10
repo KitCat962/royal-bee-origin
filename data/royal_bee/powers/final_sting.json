@@ -7,7 +7,7 @@
 		"should_render": true
 	},
 	"key": {
-		"key": "key.origins.primary_active"
+		"key": "key.origins.secondary_active"
 	},
 	"entity_action": {
 		"type": "origins:and",
