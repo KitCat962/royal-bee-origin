@@ -14,7 +14,7 @@
 			"bar_index": 0,
 			"condition": {
 				"type": "origins:resource",
-				"resource": "*:summon_bee_self",
+				"resource": "*:summon_bee_player_onpress",
 				"comparison": "!=",
 				"compare_to": 0
 			}
