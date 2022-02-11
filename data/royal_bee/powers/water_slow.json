@@ -10,7 +10,7 @@
     },
 	"condition":{
 		"type":"origins:resource",
-		"resource":"*:wet_toggle",
+		"resource":"*:wet_bool",
 		"comparison":"==",
 		"compare_to":1
 	}

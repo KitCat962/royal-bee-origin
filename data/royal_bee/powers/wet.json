@@ -19,18 +19,18 @@
 		},
 		"min_action": {
 			"type": "origins:change_resource",
-			"resource": "*:wet_toggle",
+			"resource": "*:wet_bool",
 			"change": -1,
 			"set": true
 		},
 		"max_action": {
 			"type": "origins:change_resource",
-			"resource": "*:wet_toggle",
+			"resource": "*:wet_bool",
 			"change": 1,
 			"set": true
 		}
 	},
-	"toggle": {
+	"bool": {
 		"type": "origins:resource",
 		"min": 0,
 		"max": 1,
