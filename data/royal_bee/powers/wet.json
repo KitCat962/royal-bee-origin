@@ -1,5 +1,6 @@
 {
-	"hidden": true,
+	"name":"Water Weight",
+	"description":"Some of your abilities will be disabled if you get too wet.",
 	"type": "origins:multiple",
 	"bar": {
 		"type": "origins:resource",
