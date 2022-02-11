@@ -7,19 +7,11 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:height 0 @s"
+				"command": "scale delay set pehkui:base 0 @s"
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:width 0 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:height 0.3 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 0.3 @s"
+				"command": "scale set pehkui:base 0.25 @s"
 			}
 		]
 	},
@@ -28,19 +20,11 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:height 0 @s"
+				"command": "scale delay set pehkui:base 0 @s"
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:width 0 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:height 0.3 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 0.3 @s"
+				"command": "scale set pehkui:base 0.25 @s"
 			}
 		]
 	},
@@ -49,19 +33,11 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:height 0 @s"
+				"command": "scale delay set pehkui:base 0 @s"
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:width 0 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:height 0.3 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 0.3 @s"
+				"command": "scale set pehkui:base 0.25 @s"
 			}
 		]
 	},
@@ -70,19 +46,11 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:height 1 @s"
+				"command": "scale delay set pehkui:base 1 @s"
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale delay set pehkui:width 1 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:height 1 @s"
-			},
-			{
-				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 1 @s"
+				"command": "scale set pehkui:base 1 @s"
 			}
 		]
 	}
