@@ -1,6 +1,6 @@
 {
 	"name": "Microscopic",
-	"description": "You are a little bit shorter than a block",
+	"description": "You are a quater of a block in size.",
 	"type": "origins:action_on_callback",
 	"entity_action_choose": {
 		"type": "origins:and",
