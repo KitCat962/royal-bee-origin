@@ -1,7 +1,8 @@
 {
 	"name":"Royal Bee",
-	"description":"",
+	"description":"A rare mutation of the honey bee. This bee can, and will kill you if you so much as look at it funny, not unlike the common wasp.",
 	"icon":"minecraft:honeycomb",
+	"impact":3,
 	"powers":[
 		"royal_bee:pollen_diet",
 		"royal_bee:float_flight",
