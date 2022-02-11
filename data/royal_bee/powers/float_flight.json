@@ -59,13 +59,35 @@
 		"type": "origins:modify_air_speed",
 		"modifier": {
 			"operation": "multiply_total",
-			"value": 0.8
+			"value": 1.2
 		},
 		"condition": {
 			"type": "origins:resource",
 			"resource": "*:wet_bool",
 			"comparison": "==",
 			"compare_to": 0
+		}
+	},
+	"break_speed": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"operation": "multiply_base",
+			"value": 4
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "*:wet_bool",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:on_block",
+					"inverted": true
+				}
+			]
 		}
 	}
 }
