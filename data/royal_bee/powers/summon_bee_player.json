@@ -1,6 +1,6 @@
 {
 	"name": "NOT THE BEES",
-	"description": "",
+	"description": "Summon 3 aggressive bees with your primary. They will disappear after 1 minute.",
 	"type": "origins:multiple",
 	"onpress": {
 		"type": "origins:active_self",
