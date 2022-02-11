@@ -10,6 +10,7 @@
 		"royal_bee:summon_bee_player",
 		"royal_bee:highly_flammable",
 		"royal_bee:final_sting",
-		"royal_bee:wet"
+		"royal_bee:wet",
+		"royal_bee:water_slow"
 	]
 }

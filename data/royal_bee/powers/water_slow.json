@@ -1,0 +1,17 @@
+{
+	"name":"Absorbant",
+	"description":"While wet, you are slow.",
+	"type":"origins:conditioned_attribute",
+	"tick_rate":5,
+	"modifier":{
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": -0.6
+    },
+	"condition":{
+		"type":"origins:resource",
+		"resource":"*:wet_toggle",
+		"comparison":"==",
+		"compare_to":1
+	}
+}
