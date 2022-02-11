@@ -1,0 +1,15 @@
+{
+	"name":"Royal Bee",
+	"description":"",
+	"icon":"minecraft:honeycomb",
+	"powers":[
+		"royal_bee:pollen_diet",
+		"royal_bee:float_flight",
+		"royal_bee:microscopic",
+		"royal_bee:puny",
+		"royal_bee:summon_bee_player",
+		"royal_bee:highly_flammable",
+		"royal_bee:final_sting",
+		"royal_bee:wet"
+	]
+}
