@@ -21,5 +21,11 @@
 				"command": "effect give @e[sort=nearest,limit=1,distance=0.1..2] minecraft:instant_damage 1 1"
 			}
 		]
+	},
+	"condition":{
+		"type":"origins:resource",
+		"resource":"*:wet_toggle",
+		"comparison":"==",
+		"compare_to":0
 	}
 }
