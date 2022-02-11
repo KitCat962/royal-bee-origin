@@ -1,6 +1,6 @@
 {
 	"name": "Final Sting",
-	"description": "",
+	"description": "Kill yourself to deal massive damage to your foes! Or just for fun I guess.",
 	"type": "origins:active_self",
 	"cooldown": 1200,
 	"hud_render": {
