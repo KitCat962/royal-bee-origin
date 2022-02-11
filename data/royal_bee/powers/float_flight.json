@@ -23,7 +23,7 @@
 		"hud_render":{"should_render": false},
 		"entity_action":{
 			"type": "origins:add_velocity",
-			"y": 1
+			"y": 0.08
 		},
 		"condition":{
 			"type":"origins:resource",
@@ -42,7 +42,7 @@
 		"hud_render":{"should_render": false},
 		"entity_action":{
 			"type": "origins:add_velocity",
-			"y": -1
+			"y": -0.03
 		},
 		"condition":{
 			"type":"origins:resource",
