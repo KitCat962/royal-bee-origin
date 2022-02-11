@@ -1,67 +1,71 @@
 {
-	"name":"Float Flight",
-	"description":"",
-	"type":"origins:multiple",
-	"no_grav":{
-		"type":"origins:modify_falling",
-		"velocity":0,
-		"take_fall_damage":false,
-		"condition":{
-			"type":"origins:resource",
-			"resource":"*:wet_bool",
-			"comparison":"==",
-			"compare_to":0
+	"name": "Float Flight",
+	"description": "",
+	"type": "origins:multiple",
+	"no_grav": {
+		"type": "origins:modify_falling",
+		"velocity": 0,
+		"take_fall_damage": false,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:wet_bool",
+			"comparison": "==",
+			"compare_to": 0
 		}
 	},
-	"on_space":{
-		"type":"origins:active_self",
-		"cooldown":0,
-		"key":{
-			"key":"key.jump",
-			"continuous":true
+	"on_space": {
+		"type": "origins:active_self",
+		"cooldown": 0,
+		"key": {
+			"key": "key.jump",
+			"continuous": true
 		},
-		"hud_render":{"should_render": false},
-		"entity_action":{
+		"hud_render": {
+			"should_render": false
+		},
+		"entity_action": {
 			"type": "origins:add_velocity",
 			"y": 0.08
 		},
-		"condition":{
-			"type":"origins:resource",
-			"resource":"*:wet_bool",
-			"comparison":"==",
-			"compare_to":0
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:wet_bool",
+			"comparison": "==",
+			"compare_to": 0
 		}
 	},
-	"on_shift":{
-		"type":"origins:active_self",
-		"cooldown":0,
-		"key":{
-			"key":"key.sneak",
-			"continuous":true
+	"on_shift": {
+		"type": "origins:active_self",
+		"cooldown": 0,
+		"key": {
+			"key": "key.sneak",
+			"continuous": true
 		},
-		"hud_render":{"should_render": false},
-		"entity_action":{
+		"hud_render": {
+			"should_render": false
+		},
+		"entity_action": {
 			"type": "origins:add_velocity",
 			"y": -0.03
 		},
-		"condition":{
-			"type":"origins:resource",
-			"resource":"*:wet_bool",
-			"comparison":"==",
-			"compare_to":0
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:wet_bool",
+			"comparison": "==",
+			"compare_to": 0
 		}
 	},
-	"air_speed":{
-		"type":"origins:modify_air_speed",
+	"air_speed": {
+		"type": "origins:modify_air_speed",
 		"modifier": {
 			"operation": "multiply_total",
 			"value": 0.2
 		},
-		"condition":{
-			"type":"origins:resource",
-			"resource":"*:wet_bool",
-			"comparison":"==",
-			"compare_to":0
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:wet_bool",
+			"comparison": "==",
+			"compare_to": 0
 		}
 	}
 }
