@@ -15,11 +15,11 @@
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale set pehkui:height 0.35 @s"
+				"command": "scale set pehkui:height 0.3 @s"
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 0.35 @s"
+				"command": "scale set pehkui:width 0.3 @s"
 			}
 		]
 	},
@@ -36,11 +36,11 @@
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale set pehkui:height 0.35 @s"
+				"command": "scale set pehkui:height 0.3 @s"
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 0.35 @s"
+				"command": "scale set pehkui:width 0.3 @s"
 			}
 		]
 	},
@@ -57,11 +57,11 @@
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale set pehkui:height 0.35 @s"
+				"command": "scale set pehkui:height 0.3 @s"
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "scale set pehkui:width 0.35 @s"
+				"command": "scale set pehkui:width 0.3 @s"
 			}
 		]
 	},
