@@ -1,6 +1,6 @@
 {
 	"name": "Pollen Diet",
-	"description": "",
+	"description": "You can't eat normal food. Instead, you gain food from surrounding flowers.",
 	"type": "origins:multiple",
 	"prevent": {
 		"type": "origins:prevent_item_use",
