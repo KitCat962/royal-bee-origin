@@ -1,0 +1,30 @@
+{
+	"name": "Pollen Diet",
+	"description": "",
+	"type": "origins:multiple",
+	"prevent": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:food"
+		}
+	},
+	"near_flowers":{
+		"type":"origins:action_over_time",
+		"interval":20,
+		"entity_action":{
+			"type": "origins:feed",
+			"food": 2,
+			"saturation": 2
+		},
+		"condition":{
+			"block_condition":{
+				"type": "origins:in_tag",
+				"tag": "minecraft:flowers"
+			},
+			"radius":8,
+			"shape":"sphere",
+			"comparison":">=",
+			"compare_to":8
+		}
+	}
+}
