@@ -14,7 +14,7 @@
 		"entity_action":{
 			"type": "origins:feed",
 			"food": 2,
-			"saturation": 2
+			"saturation": 0.2
 		},
 		"condition":{
 			"type":"origins:block_in_radius",
