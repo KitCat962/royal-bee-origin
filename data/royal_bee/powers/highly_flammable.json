@@ -1,0 +1,12 @@
+{
+	"name":"Highly Flammable",
+	"description":"Did you know that bees are highly flammable? You take double fire damage.",
+	"type":"origins:modify_damage_taken",
+	"damage_condition":{
+		"type": "origins:fire"
+	},
+	"modifier": {
+        "operation": "multiply_base",
+        "value": 1
+    }
+}
