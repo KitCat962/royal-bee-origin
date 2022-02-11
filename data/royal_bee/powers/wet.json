@@ -46,7 +46,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"comparison": "==",
 						"compare_to": 0
 					},
@@ -59,7 +59,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"calculation": "sum",
 						"comparison": ">=",
 						"compare_to": 4
@@ -73,7 +73,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"calculation": "sum",
 						"comparison": ">=",
 						"compare_to": 8
@@ -87,7 +87,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"calculation": "sum",
 						"comparison": ">=",
 						"compare_to": 16
@@ -117,7 +117,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"calculation": "sum",
 						"comparison": "==",
 						"compare_to": 0
@@ -128,7 +128,7 @@
 							{
 								"condition": {
 									"type": "origins:fluid_height",
-									"fluid": "minecraft:water",
+									"fluid": "origins:water",
 									"comparison": "!=",
 									"compare_to": 0
 								},
@@ -165,7 +165,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"calculation": "sum",
 						"comparison": ">=",
 						"compare_to": 4
@@ -213,7 +213,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"calculation": "sum",
 						"comparison": ">=",
 						"compare_to": 8
@@ -261,7 +261,7 @@
 				{
 					"condition": {
 						"type": "origins:enchantment",
-						"enchantment": "minecraft:water_protection",
+						"enchantment": "origins:water_protection",
 						"calculation": "sum",
 						"comparison": ">=",
 						"compare_to": 16
