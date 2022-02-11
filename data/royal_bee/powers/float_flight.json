@@ -1,6 +1,6 @@
 {
 	"name": "Float Flight",
-	"description": "",
+	"description": "You are always floating. Hold jump to rise and sneak to fall.",
 	"type": "origins:multiple",
 	"no_grav": {
 		"type": "origins:modify_falling",
