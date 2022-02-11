@@ -50,5 +50,12 @@
 			"comparison":"==",
 			"compare_to":0
 		}
+	},
+	"air_speed":{
+		"type":"origins:modify_air_speed",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 0.2
+		}
 	}
 }
